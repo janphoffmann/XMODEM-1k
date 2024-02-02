@@ -56,7 +56,7 @@ function XmodemReceive(device,file)
         crc(1,1:2)=dec2hex(read(t,1));
         crc(1,3:4)=dec2hex(read(t,1));
         crc=strcat(crc(1,1),crc(1,2),crc(1,3),crc(1,4));
-        [ccc,hex]=crc16(packet(i,1:end));
+        [ccc,hex]=XmodemCRC16(packet(i,1:end));
         if hex==crc
             write(t,6,"uint8");
         else 
