@@ -40,7 +40,7 @@ function ok=XmodemTransmit(file,device)
         %pause(0.01);
         write(device,packet,"uint8");
         %pause(0.01);
-        [ccc,hex]=crc16((packet));
+        [ccc,hex]=XmodemCRC16((packet));
         crc=strcat(hex(1,3),hex(1,4),hex(1,1),hex(1,2));
         write(device,hex2dec(crc),"uint16");
         inChar=0;
