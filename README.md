@@ -15,3 +15,7 @@ device=tcpserver("127.0.0.1",23);<br/>
 //or: device=serial(COM1,96200);<br/>
 file="C\fileReceive.txt";<br/>
 XmodemReceive(device,file);<br/>
+<br/>
+<br/>
+If you test this with Teraterm, be shure to make<br/>
+new connection to "service": "Other"!<br/>
