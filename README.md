@@ -1,6 +1,7 @@
 # XMODEM-1k
-XMODEM CRC 1k implementation for Matlab
-
+XMODEM CRC 1k implementation for Matlab<br/>
+works for 1k and standard 128Byte<br/>
+<br/>
 These are a simple XMODEM transceiver functions<br/>
 <br/>
 For Transmitting File:<br/>
